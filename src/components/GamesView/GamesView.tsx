@@ -4,7 +4,6 @@ import styles from "./GamesView.module.scss";
 import GameItemCard from "../GameItemCard/GameItemCard";
 
 function GamesView({ data }: { data: any }) {
-  console.log("data", data);
   return (
     <div className={styles.gamesViewContainer}>
       <h2 className={styles.title}>GamesView</h2>

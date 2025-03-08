@@ -12,10 +12,8 @@ export default async function GamePage({
 }) {
   const slug = await params.slug;
   const gamesPath = slug.join("/");
-  console.log("params", gamesPath);
 
   const data = await getPageData(`/${gamesPath}`);
-  console.log("data", data);
 
   return (
     <div className={styles.page}>

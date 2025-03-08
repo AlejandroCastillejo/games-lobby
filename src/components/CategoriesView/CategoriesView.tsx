@@ -8,7 +8,6 @@ import CategoryItemCard from "@/components/CategoryItemCard";
 import styles from "./CategoriesView.module.scss";
 
 function CategoriesView({ data }: { data: { items: CategoryItem[] } }) {
-  console.log("data", data);
   const items = data?.items;
   items.shift();
 

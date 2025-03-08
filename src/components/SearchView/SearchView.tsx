@@ -13,11 +13,9 @@ function SearchView() {
     getGamesByName(inputText)
       .then((data) => setdata(data))
       .catch((error) => {
-        console.log("error", error);
         alert(error.message);
       });
   };
-  console.log("data", data);
 
   return (
     <div>
