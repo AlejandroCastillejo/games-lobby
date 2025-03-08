@@ -1,0 +1,18 @@
+@import "@/styles/colors.scss";
+@import "@/styles/font.scss";
+
+.gameItemCardContainer {
+  width: 270px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid $background-grey;
+  border-radius: 5px;
+  align-items: center;
+
+  .name {
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+  }
+}

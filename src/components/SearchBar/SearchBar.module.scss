@@ -1,0 +1,25 @@
+@import "@/styles/colors";
+@import "@/styles/font";
+
+.searchBarContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  .searchInput {
+    width: 80%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: $font-size-text;
+  }
+
+  .button {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "@/styles/colors";
+@import "@/styles/font";
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $background-black;
+  color: $font-white;
+
+  .titleContainer {
+    display: flex;
+    width: fit-content;
+    padding: 5px;
+
+    .title {
+      width: fit-content;
+      font-size: $font-size-title;
+      font-weight: $font-weight-extra-bold;
+    }
+  }
+
+  .searchButton {
+    padding: 10px;
+    background-color: $background-light-grey;
+    color: $font-default;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

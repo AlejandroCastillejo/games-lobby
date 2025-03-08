@@ -1,0 +1,26 @@
+@import "@/styles/media-breakpoints";
+@import "@/styles/colors.scss";
+@import "@/styles/font.scss";
+
+.gamesViewContainer {
+  .title {
+    background-color: $background-grey;
+    font-size: $font-size-title;
+    font-weight: $font-weight-bold;
+    padding: 10px;
+  }
+
+  .gamesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  @include screen-sm {
+    .gamesList {
+      gap: 10px;
+    }
+  }
+}

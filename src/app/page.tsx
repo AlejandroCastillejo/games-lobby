@@ -1,10 +1,16 @@
+import { getLobbyCategories } from "@/services/pikakasino-api/config-service";
+
+import CategoriesView from "@/components/CategoriesView";
+
 import styles from "./page.module.scss";
 
-export default function Home() {
+export default async function HomePage() {
+  // Fetch menu lobby categories.
+  const data = await getLobbyCategories();
+
   return (
     <div className={styles.page}>
-      <main className={styles.main}></main>
-      <footer className={styles.footer}></footer>
+      <CategoriesView data={data?.menu?.lobby} />
     </div>
   );
 }
